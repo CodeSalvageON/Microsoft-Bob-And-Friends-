@@ -1,0 +1,78 @@
+#game-window, #frame1, #frame2, #username-choice {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  background-size: cover;
+}
+
+#chat-window {
+  top: 10px;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+
+#weather-window {
+  top: 10px;
+  left: 30px;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+
+#weather-window-image {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background-size: cover;
+}
+
+#weather-window-window {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
+
+#chat-box {
+  width: 500px;
+  height: 300px;
+}
+
+#chat-form {
+  left: 30px;
+  position: absolute;
+}
+
+#title-bar {
+  z-index: 100;
+}
+
+#username-choice-img {
+  top: 55px;
+  left: 10px;
+}
+
+#username-form {
+  top: 35px;
+  right: 100px;
+  position: absolute;
+}
+
+#username-new {
+  width: 150px;
+  border-radius: 0px;
+}
+
+#go-back-from-username-form {
+  width: 500px;
+}
+
+#frame2-icons {
+  left: 10px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.absolute {
+  position: absolute;
+}

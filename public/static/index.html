@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Microsoft Bob (And Friends)</title>
+
+    <link href="https://codesalvageon.github.io/magichat/styles/index.css" rel="stylesheet">
+    <link href="https://codesalvageon.github.io/magichat/styles/98.css" rel="stylesheet">
+    <link href="/static/css/body.css" rel="stylesheet">
+    <link href="/static/css/window.css" rel="stylesheet">
+  </head>
+  <body class="crt">
+    <div id="game-window" class="draggable window center">
+      <div id="frame1">
+        <div class="title-bar" id="title-bar">
+          <div class="title-bar-text">Microsoft Bob (And Friends)</div>
+        </div>
+        <div id="logo" class="center">
+          <img src="" id="logo1"/>
+          <span></span>
+          <tt><h4>And friends</h4></tt> 
+        </div>
+        <div class="center">
+          <button id="gamestart">Enter Neighborhood</button> 
+          <button id="sign-guestbook">Sign the Guestbook</button>
+        </div>
+      </div>
+      <div id="username-choice">
+        <div class="title-bar" id="title-bar">
+          <div class="title-bar-text">Microsoft Bob (And Friends) Online Registration Wizard</div>
+        </div>
+        <img src="https://codesalvageon.github.io/magichat/images/msnetwork.PNG" class="absolute" id="username-choice-img"/>
+        <button id="go-back-from-username-form">Go back</button>
+        <form id="username-form">
+          <h4 class="error" id="username-form-error"></h4>
+          <h4>Username: <input id="username-new" required/><button>Register</button></h4>
+        </form>
+      </div>
+      <div id="frame2"> 
+        <div class="title-bar" id="title-bar">
+          <div class="title-bar-text">Microsoft Bob (And Friends) Online!</div>
+        </div>
+        <div id="frame2-buttons">
+          <button class="paragraph" id="explore-neighborhood">Explore My Neighborhood</button> 
+          <button class="paragraph" id="add-rooms">Add Rooms</button>
+          <button class="paragraph" id="house-settings">House Settings</button>
+        </div>
+        <div id="frame2-icons"> 
+        </div>
+      </div>
+    </div>
+    <div id="chat-window" class="draggable window center">
+      <div class="title-bar" id="title-bar">
+        <div class="title-bar-text">Microsoft Bob (And Friends) Instant Messenger</div>
+      </div>
+      <p id="people-online">Users online: 0</p>
+      <hr/>
+      <div class="add-scroll" id="chat-box"> 
+      </div>
+      <hr/>
+      <form id="chat-form">
+        <p align="left" class="error" id="chat-form-error"></p>
+        <p align="left">Your message</p>
+        <textarea rows="5" cols="50" align="left" id="chat-message" maxlength="500"></textarea>
+        <br/>
+        <button align="left">Send Message</button>
+      </form>
+    </div>
+    <div id="weather-window" class="draggable window">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Microsoft Bob (And Friends) Weather at the Window! 
+        </div> 
+      </div> 
+      <div id="weather-window-image">
+        <img src="" id="weather-window-window"/> 
+      </div>
+    </div>
+
+    <script src="https://codesalvageon.github.io/magichat/scripts/jquery.js"></script>
+    <script src="https://codesalvageon.github.io/magichat/scripts/jqueryui.js"></script>
+    <script src="https://codesalvageon.github.io/magichat/scripts/touchpunch.js"></script>
+    <script src="https://codesalvageon.github.io/magichat/scripts/socketio.js"></script>
+    <script src="/static/window/images.js"></script>
+    <script src="/static/window/window.js"></script>
+    <script src="/static/window/buttons.js"></script>
+    <script src="/static/window/forms.js"></script>
+    <script src="/static/window/getchat.js"></script>
+  </body>
+</html>
