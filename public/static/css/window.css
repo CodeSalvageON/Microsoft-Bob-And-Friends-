@@ -68,9 +68,8 @@
 }
 
 #frame2-icons {
-  left: 10px;
-  bottom: 0px;
-  position: absolute;
+  bottom: 10px;
+  position: fixed;
 }
 
 .absolute {

@@ -11,10 +11,14 @@ const username_form_error = document.getElementById("username-form-error");
 const chat_form_error = document.getElementById("chat-form-error");
 const people_online = document.getElementById("people-online");
 const weather_window_window = document.getElementById("weather-window-window");
+const chat_icon = document.getElementById("chatIcon");
+const weather_icon = document.getElementById("weatherIcon");
 
 const username_saved = localStorage.getItem("msbobandfriends-save-username");
 let chat_saved = "";
 let weather_saved = "";
+let optimization = true;
+let is_interval_on = false;
 
 $("#chat-window").hide();
 $("#weather-window").hide();
@@ -29,7 +33,9 @@ frame1.style.backgroundImage = "url('" + cover + "')";
 frame2.style.backgroundImage = "url('" + home1 + "')";
 
 logo_1.src = logo1;
-weather_window_window.src = window;
+weather_window_window.src = windowForWeather;
+chat_icon.src = chatIcon;
+weather_icon.src = weatherIcon;
 
 const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     
