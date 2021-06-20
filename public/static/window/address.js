@@ -59,8 +59,26 @@ function createAddress () {
   }
 }
 
-function updateRooms () {
+function updateRooms () { // Compress room data as much as possible
   home_slot = compressed_room_1_slot + "," + compressed_room_2_slot + "," + compressed_room_3_slot + "," + compressed_room_4_slot + "," + compressed_room_5_slot;
 
-  
+  localStorage.setItem("msbobandfriends-save-my-home", compressed_home_slot);
+
+  fetch ("/update-rooms", {
+    method : "POST",
+    headers : {
+      "Content-Type" : "application/json"
+    },
+    body : JSON.stringify({
+      home : compressed_home_slot,
+      address : my_address
+    })
+  })
+  .then(response => response.text())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    throw error;
+  });
 }

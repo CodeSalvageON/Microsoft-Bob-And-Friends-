@@ -62,6 +62,10 @@ $("#twitterIcon").click(function () {
   window.open("https://twitter.com/codehaz?lang=en");
 });
 
+$("#exitIcon").click(function () {
+  window.close();
+});
+
 $("#close-chat").click(function () {
   $("#chat-window").fadeOut(2000);
 

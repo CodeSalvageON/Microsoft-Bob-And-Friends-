@@ -252,7 +252,7 @@ app.post('/update-rooms', function (req, res) { // Update rooms (also based on t
     async function actuallyDontDoShit () { 
       const addressRef = db.collection("msbob").doc(my_address);
 
-      addressRef.set({
+      await addressRef.set({
         log : unparsed_home_array
       });
     }
