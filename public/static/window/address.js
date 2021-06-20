@@ -24,6 +24,16 @@ let compressed_room_3_slot = LZString.compress(room_3_slot);
 let compressed_room_4_slot = LZString.compress(room_4_slot);
 let compressed_room_5_slot = LZString.compress(room_5_slot);
 
+// Alter storage slots if null or undefined 
+
+if (my_home === null || my_home === undefined || my_home === "") {
+  localStorage.setItem("msbobandfriends-save-my-home", compressed_room_1_slot + ",");
+}
+
+else {
+  // Pass
+}
+
 function createAddress () {
   if (my_address === null || my_address === undefined || my_address === "") {
     fetch ("/address")
@@ -71,7 +81,8 @@ function updateRooms () { // Compress room data as much as possible
     },
     body : JSON.stringify({
       home : compressed_home_slot,
-      address : my_address
+      address : my_address,
+      raw : home_slot
     })
   })
   .then(response => response.text())

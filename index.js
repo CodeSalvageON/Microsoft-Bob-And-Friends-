@@ -218,11 +218,12 @@ app.post('/make-address', function (req, res) { // Make an address based on the 
 
 app.post('/update-rooms', function (req, res) { // Update rooms (also based on the address system)
   const unparsed_home_array = req.body.home;
+  const raw_array = req.body.raw;
   const my_address = req.body.address;
 
   // Parse the array 
 
-  const parsed_home_array = unparsed_home_array.split(",");
+  const parsed_home_array = raw_array.split(",");
   
   // Check for over limits
 
