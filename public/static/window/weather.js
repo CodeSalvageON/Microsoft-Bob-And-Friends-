@@ -17,7 +17,19 @@ setInterval(function () {
         weather_saved = data;
 
         if (data === "stormy") {
-          weather_window_window.style.backgroundImage = "url('" + sunBg + "')'";
+          weather_window_window.style.backgroundImage = "url('" + sunBg + "')";
+        }
+
+        else if (data === "sunny") {
+          weather_window_window.style.backgroundImage = "url('" + sunnyOutdoor + "')";
+        }
+
+        else if (data === "snowy") {
+          weather_window_window.style.backgroundImage = "url('" + snowyOutdoor + "')";
+        }
+
+        else if (data === "cloudy") {
+          weather_window_window.style.backgroundImage = "url('" + cloudyOutdoor + "')";
         }
       }
     })

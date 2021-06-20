@@ -41,17 +41,21 @@
         </div>
         <div id="frame2-buttons">
           <button class="paragraph" id="explore-neighborhood">Explore My Neighborhood</button> 
-          <button class="paragraph" id="add-rooms">Add Rooms</button>
+          <button class="paragraph" id="add-rooms">Add Rooms and Style Rooms</button>
           <button class="paragraph" id="house-settings">House Settings</button>
         </div>
         <div id="frame2-icons"> 
-          <img src="" id="chatIcon" width="50" height="50"/><img src="" id="weatherIcon" width="50" height="50"/>
+          <img src="" id="chatIcon" width="50" height="50" alt="MS Bob Instant Messenger"/><img src="" id="weatherIcon" width="50" height="50"/><img src="" id="gitIcon" width="50" height="50"/><img src="" id="twitterIcon" width="50" height="50"/>
         </div>
+        <img src="" id="exitIcon"/>
       </div>
     </div>
-    <div id="chat-window" class="draggable window center">
+    <div id="chat-window" class="draggable window center-absolute">
       <div class="title-bar" id="title-bar">
         <div class="title-bar-text">Microsoft Bob (And Friends) Instant Messenger</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close" id="close-chat"></button>
+        </div>
       </div>
       <p id="people-online">Users online: 0</p>
       <hr/>
@@ -66,11 +70,14 @@
         <button align="left">Send Message</button>
       </form>
     </div>
-    <div id="weather-window" class="draggable window">
+    <div id="weather-window" class="draggable window center-absolute">
       <div class="title-bar">
         <div class="title-bar-text">
           Microsoft Bob (And Friends) Weather at the Window! 
         </div> 
+        <div class="title-bar-controls">
+          <button aria-label="Close" id="close-weather"></button>
+        </div>
       </div> 
       <div id="weather-window-image">
         <img src="" id="weather-window-window"/> 
@@ -81,11 +88,14 @@
     <script src="https://codesalvageon.github.io/magichat/scripts/jqueryui.js"></script>
     <script src="https://codesalvageon.github.io/magichat/scripts/touchpunch.js"></script>
     <script src="https://codesalvageon.github.io/magichat/scripts/socketio.js"></script>
+    <script src="https://codesalvageon.github.io/magichat/scripts/lzstring.js"></script>
     <script src="/static/window/images.js"></script>
+    <script src="/static/window/address.js"></script>
     <script src="/static/window/window.js"></script>
     <script src="/static/window/buttons.js"></script>
     <script src="/static/window/forms.js"></script>
     <script src="/static/window/getchat.js"></script>
     <script src="/static/window/weather.js"></script>
+    <script src="/static/window/location.js"></script>
   </body>
 </html>

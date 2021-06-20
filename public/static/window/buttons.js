@@ -12,15 +12,11 @@ $("#gamestart").click(function () {
       $("#frame2").fadeIn(2000);
       
       if (optimization === true) {
-        $("#chat-window").fadeIn(2000);
-        $("#weather-window").fadeIn(2000);
-
-        is_interval_on = true;
+        // Placeholder
       }
 
       else {
-        $("#chat-window").fadeIn(2000);
-        $("#weather-window").fadeIn(2000);
+        // Placeholder
       }
     }
   }, 2000);
@@ -32,4 +28,60 @@ $("#go-back-from-username-form").click(function () {
   setTimeout(function () {
     $("#frame1").fadeIn(2000);
   }, 2000);
+});
+
+$("#chatIcon").click(function () {
+  $("#chat-window").fadeIn(2000);
+  
+  if (optimization === true) {
+    is_interval_on = true;
+  }
+
+  else {
+    // Do nothing
+  }
+});
+
+$("#weatherIcon").click(function () {
+  $("#weather-window").fadeIn(2000);
+
+  if (optimization === true) {
+    is_interval_on = true;
+  }
+
+  else {
+    // Do nothing
+  }
+});
+
+$("#gitIcon").click(function () {
+  window.open("https://github.com/CodeSalvageON/Microsoft-Bob-And-Friends-");
+});
+
+$("#twitterIcon").click(function () {
+  window.open("https://twitter.com/codehaz?lang=en");
+});
+
+$("#close-chat").click(function () {
+  $("#chat-window").fadeOut(2000);
+
+  if (optimization === true) {
+    is_interval_on = false;
+  }
+
+  else {
+    // Do nothing
+  }
+});
+
+$("#close-weather").click(function () {
+  $("#weather-window").fadeOut(2000);
+
+  if (optimization === true) {
+    is_interval_on = false;
+  }
+
+  else {
+    // Do nothing
+  }
 });

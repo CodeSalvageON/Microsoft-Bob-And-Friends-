@@ -2,6 +2,7 @@
   width: 800px;
   height: 600px;
   position: relative;
+  text-align: center;
   background-size: cover;
 }
 
@@ -14,9 +15,24 @@
 
 #weather-window {
   top: 10px;
-  left: 30px;
   width: 500px;
   height: 500px;
+  position: absolute;
+}
+
+#frame2-icons {
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  background-color: gray;
+}
+
+#exitIcon {
+  right: 0px;
+  bottom: 0px;
   position: absolute;
 }
 
@@ -65,11 +81,6 @@
 
 #go-back-from-username-form {
   width: 500px;
-}
-
-#frame2-icons {
-  bottom: 10px;
-  position: fixed;
 }
 
 .absolute {

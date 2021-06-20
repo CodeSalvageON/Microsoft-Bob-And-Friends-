@@ -13,6 +13,9 @@ const people_online = document.getElementById("people-online");
 const weather_window_window = document.getElementById("weather-window-window");
 const chat_icon = document.getElementById("chatIcon");
 const weather_icon = document.getElementById("weatherIcon");
+const git_icon = document.getElementById("gitIcon");
+const twitter_icon = document.getElementById("twitterIcon");
+const exit_icon = document.getElementById("exitIcon");
 
 const username_saved = localStorage.getItem("msbobandfriends-save-username");
 let chat_saved = "";
@@ -36,6 +39,9 @@ logo_1.src = logo1;
 weather_window_window.src = windowForWeather;
 chat_icon.src = chatIcon;
 weather_icon.src = weatherIcon;
+git_icon.src = gitIcon;
+twitter_icon.src = twitterIcon;
+exit_icon.src = exitIcon;
 
 const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     

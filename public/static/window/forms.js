@@ -15,17 +15,14 @@ $("#username-form").submit(function () {
 
     setTimeout(function () {
       $("#frame2").fadeIn(2000);
+      createAddress();
       
       if (optimization === true) {
-        $("#chat-window").fadeIn(2000);
-        $("#weather-window").fadeIn(2000);
-
-        is_interval_on = true;
+        // Placeholder
       }
 
       else {
-        $("#chat-window").fadeIn(2000);
-        $("#weather-window").fadeIn(2000);
+        // Placeholder
       }
     }, 2000);
   }
