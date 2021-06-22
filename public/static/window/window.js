@@ -3,6 +3,8 @@ const chat_window = document.getElementById("chat-window");
 const weather_window = document.getElementById("weather-window");
 const frame1 = document.getElementById("frame1");
 const frame2 = document.getElementById("frame2");
+const frame3 = document.getElementById("frame3");
+const frame4 = document.getElementById("frame4");
 const logo_1 = document.getElementById("logo1");
 const username_new = document.getElementById("username-new");
 const chat_message = document.getElementById("chat-message");
@@ -28,6 +30,8 @@ let is_interval_on = false;
 $("#chat-window").hide();
 $("#weather-window").hide();
 $("#frame2").hide();
+$("#frame3").hide();
+$("#frame4").hide();
 $("#username-choice").hide();
 
 $(function () {

@@ -3,7 +3,7 @@
 let my_current_location = 1;
 
 function previousRoom () { // Move to a previous room
-  const home_array = LZString.decompress(my_home).split(",");
+  const home_array = LZString.decompress(my_home).split(":/?><");
   let number_of_rooms = 0;
 
   for (i = 0; i < home_array.length; i++) {
@@ -29,7 +29,7 @@ function previousRoom () { // Move to a previous room
 }
 
 function nextRoom () { // Move to a nearby room
-  const home_array = LZString.decompress(my_home).split(",");
+  const home_array = LZString.decompress(my_home).split(":/?><");
   let number_of_rooms = 0;
 
   for (i = 0; i < home_array.length; i++) {

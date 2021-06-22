@@ -62,6 +62,14 @@ $("#twitterIcon").click(function () {
   window.open("https://twitter.com/codehaz?lang=en");
 });
 
+$("#prevIcon").click(function () {
+  previousRoom();
+});
+
+$("#nextIcon").click(function () {
+  nextRoom();
+});
+
 $("#exitIcon").click(function () {
   window.close();
 });

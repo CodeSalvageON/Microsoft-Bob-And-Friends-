@@ -27,7 +27,7 @@ let compressed_room_5_slot = LZString.compress(room_5_slot);
 // Alter storage slots if null or undefined 
 
 if (my_home === null || my_home === undefined || my_home === "") {
-  localStorage.setItem("msbobandfriends-save-my-home", compressed_room_1_slot + ",");
+  localStorage.setItem("msbobandfriends-save-my-home", compressed_room_1_slot + ":/?><");
 }
 
 else {
@@ -70,7 +70,7 @@ function createAddress () {
 }
 
 function updateRooms () { // Compress room data as much as possible
-  home_slot = compressed_room_1_slot + "," + compressed_room_2_slot + "," + compressed_room_3_slot + "," + compressed_room_4_slot + "," + compressed_room_5_slot;
+  home_slot = compressed_room_1_slot + ":/?><" + compressed_room_2_slot + ":/?><" + compressed_room_3_slot + ":/?><" + compressed_room_4_slot + ":/?><" + compressed_room_5_slot;
 
   localStorage.setItem("msbobandfriends-save-my-home", compressed_home_slot);
 
