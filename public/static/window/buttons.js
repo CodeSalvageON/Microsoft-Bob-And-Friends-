@@ -97,3 +97,19 @@ $("#close-weather").click(function () {
     // Do nothing
   }
 });
+
+// Option buttons 
+
+$("#add-rooms").click(function () {
+  $("#frame2").hide();
+  $("#frame4").show();
+});
+
+$("#return-from-frame4").click(function () {
+  $("#frame4").hide();
+  $("#frame2").show();
+});
+
+$("#add-a-room").click(function () {
+  frame4.style.backgroundImage = "url('" + intaddBg + "')";
+});

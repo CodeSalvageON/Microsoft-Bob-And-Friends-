@@ -30,6 +30,12 @@
   background-color: gray;
 }
 
+#frame4-options {
+  bottom: 0px;
+  position: absolute;
+  background-color: gray;
+}
+
 #exitIcon {
   right: 0px;
   bottom: 0px;

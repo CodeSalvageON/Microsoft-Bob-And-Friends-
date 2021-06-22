@@ -40,6 +40,7 @@ $(function () {
 
 frame1.style.backgroundImage = "url('" + cover + "')";
 frame2.style.backgroundImage = "url('" + home1 + "')";
+frame4.style.backgroundImage = "url('" + intBg + "')";
 
 logo_1.src = logo1;
 weather_window_window.src = windowForWeather;
