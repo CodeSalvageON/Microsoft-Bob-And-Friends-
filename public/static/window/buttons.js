@@ -112,4 +112,20 @@ $("#return-from-frame4").click(function () {
 
 $("#add-a-room").click(function () {
   frame4.style.backgroundImage = "url('" + intaddBg + "')";
+
+  $("#frame-4-options").hide();
+  $("#add-room-options").show();
+
+  $("#return-from-frame4").hide();
+  $("#return-from-add").show();
+});
+
+$("#return-from-add").click(function () {
+  frame4.style.backgroundImage = "url('" + intBg + "')";
+
+  $("#add-room-options").hide();
+  $("#frame-4-options").show();
+  
+  $("#return-from-add").hide();
+  $("#return-from-frame4").show();
 });

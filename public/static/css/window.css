@@ -30,7 +30,7 @@
   background-color: gray;
 }
 
-#frame4-options {
+#frame4-options, #add-room-options {
   bottom: 0px;
   position: absolute;
   background-color: gray;

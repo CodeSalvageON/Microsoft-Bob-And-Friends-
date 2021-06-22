@@ -22,6 +22,8 @@ const prev_icon = document.getElementById("prevIcon");
 const next_icon = document.getElementById("nextIcon");
 
 const username_saved = localStorage.getItem("msbobandfriends-save-username");
+const add_room_url = document.getElementById("add_room_url");
+
 let chat_saved = "";
 let weather_saved = "";
 let optimization = true;
@@ -33,6 +35,8 @@ $("#frame2").hide();
 $("#frame3").hide();
 $("#frame4").hide();
 $("#username-choice").hide();
+$("#add-room-options").hide();
+$("#return-from-add").hide();
 
 $(function () {
   $(".draggable").draggable();

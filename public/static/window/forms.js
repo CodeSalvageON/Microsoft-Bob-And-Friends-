@@ -60,3 +60,53 @@ $("#chat-form").submit(function () {
     });
   }
 });
+
+$("#add-room-form").submit(function () {
+  event.preventDefault();
+
+  // Fill room slots 
+
+  const home_array = LZString.decompress(my_home).split(":/?><"); // Check home array for empty room slots 
+
+  for (i = 0; i < home_array.length; i++) {
+    if (home_array[i] === null || home_array[i] === undefined || home_array[i] === "") {
+      if (i === 0) {
+        // That isn't supposed to happen, ABORT
+
+        window.close();
+      }
+
+      else if (i === 1) {
+        room_2_slot = add_room_url.value;
+        updateRooms();
+      }
+
+      else if (i === 2) {
+        room_3_slot = add_room_url.value;
+        updateRooms();
+      }
+
+      else if (i === 3) {
+        room_4_slot = add_room_url.value;
+        updateRooms();
+      }
+
+      else if (i === 4) {
+        room_5_slot = add_room_url.value;
+        updateRooms();
+      }
+
+      else {
+        // Also isn't supposed to happen, ABORT 
+
+        window.close();
+      }
+    }
+
+    else {
+      // Pass
+    }
+  }
+
+  add_room_url.value = "";
+});
